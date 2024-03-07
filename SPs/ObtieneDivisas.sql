@@ -1,0 +1,13 @@
+IF OBJECT_ID('ObtieneDivisas', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE ObtieneDivisas;
+END;
+GO
+
+CREATE PROCEDURE ObtieneDivisas
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT * FROM Divisas;
+END;
